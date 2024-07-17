@@ -7,6 +7,22 @@
 
   <title>آزمون فنی</title>
 
+  <style>
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            cursor: url('dist/img/cursor.png'), auto;
+        }
+    </style>
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
@@ -43,6 +59,21 @@
      *
      */
   </script>
+
+  <!-- <style>
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        
+        button:hover 
+    </style> -->
 </head>
 
 <body class="hold-transition sidebar-mini">
