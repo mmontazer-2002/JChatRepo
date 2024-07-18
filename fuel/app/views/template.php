@@ -60,6 +60,22 @@
      */
   </script>
 
+  <!-- <style>
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        
+        button:hover {
+
+        }
+    </style> -->
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -258,22 +274,72 @@
       </div>
       <!-- /.content-header -->
 
+      
+    <!-- session_start();
+
+    // Update the path to db.php based on your repository structure
+    include '../path_to_db_folder/db.php';
+
+    if (isset($_SESSION['username'])) {
+        echo "<p>خوش آمدید، " . htmlspecialchars($_SESSION['username']) . "</p>";
+        echo '<a href="logout.php">خروج</a>';
+    } else {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
+            $username = trim($_POST['username']);
+
+            if (!empty($username)) {
+                $stmt = $conn->prepare("SELECT username, role FROM users WHERE username = ?");
+                $stmt->bind_param("s", $username);
+                $stmt->execute();
+                $stmt->bind_result($db_username, $db_role);
+                $stmt->fetch();
+                $stmt->close();
+
+                if ($db_username) {
+                    $_SESSION['username'] = $db_username;
+                    $_SESSION['role'] = $db_role;
+                    header("Location: template.php");
+                    exit();
+                } else {
+                    $error = "نام کاربری نامعتبر است.";
+                }
+            } else {
+                $error = "لطفاً نام کاربری را وارد کنید.";
+            }
+        }
+
+        if (isset($error)) {
+            echo "<p style='color: red;'>$error</p>";
+        }
+    ?>
+
+    <div class="card-footer" dir="ltr">
+        <form action="template.php" method="post">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="نام کاربری" class="form-control">
+                <span class="input-group-append">
+                    <button type="submit" name="login" class="btn btn-primary">ورود</button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    
+
+    //$conn->close(); // Close the database connection
+    ?>*/ -->
+
       <!-- Main content -->
       <div class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
-
-
-
               <div class="card" dir="rtl" style="text-align: justify">
                 <div class="card-header">
                   <h5 class="m-0">ورود کاربر فقط با یوزرنیم(بدون پسورد) و نمایش اسم آن بعد از ورود</h6>
                 </div>
                 <div class="card-body">
-                  <p class="card-text">
-
-                  </p>
+                  <p class="card-text"></p>
 
                   <div class="card-footer" dir="ltr">
                     <form action="#" metod="post">
