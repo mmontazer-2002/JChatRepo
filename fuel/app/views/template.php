@@ -60,20 +60,6 @@
      */
   </script>
 
-  <!-- <style>
-        button {
-            cursor: pointer;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-
-        
-        button:hover 
-    </style> -->
 </head>
 
 <body class="hold-transition sidebar-mini">

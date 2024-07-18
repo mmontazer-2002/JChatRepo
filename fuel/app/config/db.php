@@ -1,25 +1,16 @@
 <?php
-/**
- * Fuel is a fast, lightweight, community driven PHP 5.4+ framework.
- *
- * @package    Fuel
- * @version    1.8.2
- * @author     Fuel Development Team
- * @license    MIT License
- * @copyright  2010 - 2019 Fuel Development Team
- * @link       https://fuelphp.com
- */
+$servername = "localhost";
+$username = "root";  // Default XAMPP MySQL username
+$password = "";      // Default XAMPP MySQL password
+$dbname = "jchat";
 
-/**
- * -----------------------------------------------------------------------------
- *  Global database settings
- * -----------------------------------------------------------------------------
- *
- *  Set database configurations here to override environment specific
- *  configurations
- *
- */
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-return array(
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
 
-);
+
